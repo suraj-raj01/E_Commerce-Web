@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    background-color: white;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+/* ============navbar style start================= */
+.navbar {
+    height: 90px;
+    background-color: white;
+    display: grid;
+    row-gap: 20px;
+    grid-template-columns: auto auto auto;
+}
+
+.navbar ul li {
+    list-style-type: none;
+}
+
+.navbar #start {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar #mid {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.navbar #mid a {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+.navbar #last {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    font-size: 20px;
+}
+
+.navbar #last a {
+    color: black;
+}
+
+/* ============================navbar style end================= */
+
+/* ===============hero section style start======================= */
+
+
+.hero {
+    background-color: #f5f6dc;
+    height: 600px;
+    /* border: 1px solid; */
+    display: grid;
+    align-items: center;
+    justify-content: space-evenly;
+    grid-template-columns: auto auto;
+}
+
+.hero #box1 {
+    height: 500px;
+    width: 650px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid; */
+}
+
+.hero #box1 #para1 {
+    height: 150px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    /* border: 1px solid; */
+    font-size: 60px;
+    font-weight: bold;
+    color: #0F4224;
+}
+
+.hero #box1 #para2 {
+    height: 70px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    /* border: 1px solid; */
+    font-size: 16px;
+    font-weight: bold;
+    color: #5EA274;
+}
+
+.hero #box1 #btn {
+    height: 80px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    /* border: 1px solid; */
+}
+
+.hero #box1 #btn button {
+    padding: 18px 35px;
+    font-weight: bold;
+    font-size: 16px;
+    color: white;
+    background-color: #5EA274;
+    border-radius: 40px;
+    border: none;
+    outline: none;
+    transition: .5s;
+}
+
+.hero #box1 #btn button:hover {
+    cursor: pointer;
+    transition: .3s;
+    box-shadow: 5px 5px 10px grey;
+}
+
+.hero #box2 {
+    height: 500px;
+    width: 600px;
+    /* border: 1px solid; */
+    filter: drop-shadow(0px 0px 10px grey);
+    animation: image infinite 40s step-end;
+}
+
+@keyframes image {
+    0%{
+        background-image: url('https://static.vecteezy.com/system/resources/previews/020/899/526/original/happy-dog-transparent-background-png.png');
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        transition: 1s;
+    }
+    20% {
+        background-image: url('https://png.pngtree.com/png-vector/20231014/ourmid/pngtree-yorkshire-terrier-dog-isolated-png-image_10157901.png');
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        transition: 1s;
+    }
+
+    40% {
+        background-image: url('https://www.dognomics.com/wp-content/uploads/2022/06/B12.png');
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        transition: 1s;
+    }
+
+    60% {
+        background-image: url('https://www.freeiconspng.com/uploads/dog-png-21.png');
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        transition: 1s;
+    }
+
+    80% {
+        background-image: url('https://i.pinimg.com/originals/8d/d3/50/8dd35056333cb7020eeb9f713b5bad9d.png');
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        transition: 1s;
+    }
+
+    90% {
+        background-image: url('https://purepng.com/public/uploads/medium/purepng.com-doganimalsdogboy-981524673170qsdbl.png');
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        transition: 1s;
+    }
+}
+
+section #section{
+    height: 700px;
+    width: 100%;
+    overflow-x: hidden;
+    border: 1px solid;
+}
+
+#section #box1{
+    height: 500px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    justify-content: center;
+    column-gap: 40px;
+    /* border: 1px solid; */
+}
+#section #box1 #img-box{
+    height: 400px;
+    width: 600px;
+    background-image: url('https://next.minimog.co/cdn/shop/files/4_f74d0f00-c053-4370-aeb8-e316a3685462.jpg?v=1630658251&width=720');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* border: 1px solid; */
+}
+
+#section #box1 #text-box{
+    height: 400px;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    /* border: 1px solid; */
+}
+#section #box1 #text-box #para1{
+    height: 120px;
+    /* border: 1px solid; */
+    font-size: 50px;
+    font-weight: bold;
+    color: #0F4224;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+#section #box1 #text-box #para2{
+    height: 120px;
+    /* border: 1px solid; */
+    font-size: 16px;
+    color: grey;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+#section #box1 #text-box #btn button{
+    padding: 18px 35px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #5EA274;
+    color: white;
+    border-radius: 40px;
+    border: none;
+    outline: none;
+    transition: .5s;
+}
+#section #box1 #text-box #btn button:hover{
+    box-shadow: 5px 5px 10px grey;
+    cursor: pointer;
+    transition: .4s;
+}
+#section #box2{
+    height: 300px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    /* border: 1px solid; */
+}
+
+#section #box2 #box2-box1{
+    height: 280px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    /* border: 1px solid; */
+}
+#section #box2 #box2-box1 img{
+    transition: .5s;
+}
+#section #box2 #box2-box1 img:hover{
+    scale: .9;
+    transition: .4s;
+}
+#section #box2 #box2-box1 #para1{
+    font-weight: bold;
+    font-size: 20px;
+}
+#section #box2 #box2-box1 #para2{
+    font-size: 16px;
+    color: grey;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

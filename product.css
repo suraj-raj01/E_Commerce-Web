@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    background-color: white;
+}
+
+#products{
+    height: 700px;
+    width: 100%;
+    /* border: 1px solid; */
+}
+
+#products #box1{
+    height: 180px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid; */
+}
+#products #box1 #para1{
+    font-weight: bold;
+    font-size: 40px;
+    padding: 15px;
+    color: #0F4224;
+}
+#products #box1 #para2{
+    font-size: 16px;
+    color: grey;
+}
+
+#products #box2{
+    height: 520px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    align-items: center;
+    justify-content: center;
+    column-gap: 30px;
+    /* border: 1px solid; */
+}
+#products #box2 #box2-box1{
+    height: 420px;
+    width: 270px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 10px;
+    /* border: 1px solid; */
+}
+#products #box2 #box2-box1:hover{
+    box-shadow: 0px 8px 15px #dfdcdc;
+}
+#products #box2 #box2-box1 img{
+    transition: .7s;
+}
+#products #box2 #box2-box1 img:hover{
+    scale: 1.06;
+    cursor: pointer;
+    transition: .5s;
+}
+#products #box2 #box2-box1 #para1{
+    font-weight: bold;
+    font-size: 18px;
+}
+#products #box2 #box2-box1 #para2{
+    font-weight: bold;
+    font-size: 16px;
+    color: #5EA274;
+}
+#products #box2 #box2-box1 button{
+    background-color: transparent;
+    padding: 12px;
+    width: 90%;
+    border: 2px solid #0F4224;
+    border-radius: 40px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+}
+#products #box2 #box2-box1 button:hover{
+    background-color: #5EA274;
+    border-color: #5EA274;
+    color: white;
+}
